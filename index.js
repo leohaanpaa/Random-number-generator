@@ -6,8 +6,8 @@ const min = 1;                                        //Defines the minimum numb
 const max = 6;                                        //Defines the maximum number
 let randomNum;
 
-myButton.onclick =function(){
-    randomNum = math.floor(Math.random() * max) + min; //generates a random number between 1 and 6
+myButton.onclick = function(){
+    randomNum = Math.floor(Math.random() * max) + min; //generates a random number between 1 and 6
     myLabel.textContent = randomNum;
 }
 //console.log(randomNum);                                //Displays the random number
