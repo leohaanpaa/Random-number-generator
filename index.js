@@ -1,7 +1,13 @@
 //Random number generator program
 
-const min = 50;                                        //Defines the minimum number
-const max = 100;
-let randomNum = math.floor(Math.random() * (max - min)) + min; //gives a random number between  and 
+const myButton = document.getElementById("myButton");
+const myLabel = document.getElementById("myLabel");
+const min = 1;                                        //Defines the minimum number
+const max = 6;                                        //Defines the maximum number
+let randomNum;
 
-console.log(randomNum);                            //Displays the random number
+myButton.onclick =function(){
+    randomNum = math.floor(Math.random() * max) + min; //generates a random number between 1 and 6
+    myLabel.textContent = randomNum;
+}
+//console.log(randomNum);                                //Displays the random number
